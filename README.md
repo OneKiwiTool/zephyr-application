@@ -46,9 +46,9 @@ command:
 
 ```shell
 # initialize my-workspace for the example-application (main branch)
-west init -m https://github.com/zephyrproject-rtos/example-application --mr main my-workspace
+west init -m https://github.com/OneKiwiTool/zephyr-application --mr main zephyr-workspace
 # update Zephyr modules
-cd my-workspace
+cd zephyr-workspace
 west update
 ```
 
