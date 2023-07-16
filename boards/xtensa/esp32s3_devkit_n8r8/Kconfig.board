@@ -1,0 +1,8 @@
+# XIAO ESP32S3 board configuration
+
+# Copyright (c) 2023 Seeed Studio inc.
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ESP32S3_DEVKIT_N8R8
+	bool "ESP32S3 DEVKIT N8R8 Board"
+	depends on SOC_ESP32S3
