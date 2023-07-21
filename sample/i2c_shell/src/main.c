@@ -4,6 +4,7 @@
  */
 
 #include <zephyr/kernel.h>
+//#include <zephyr/drivers/sensor.h>
 #include <zephyr/drivers/gpio.h>
 
 
@@ -35,7 +36,7 @@ int main(void)
 	}
 
 	while (1) {
-		printk("Blinking %s: %03d\n", CONFIG_BOARD, data++);
+		//printk("Blinking %s: %03d\n", CONFIG_BOARD, data++);
 		ret = gpio_pin_toggle_dt(&led);
 		if (ret < 0) {
 			return 0;

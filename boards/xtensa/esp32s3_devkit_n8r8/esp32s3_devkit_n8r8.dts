@@ -8,11 +8,12 @@
 
 #include <espressif/esp32s3.dtsi>
 #include "esp32s3_devkit_n8r8-pinctrl.dtsi"
+#include "seeed_xiao_connector.dtsi"
 #include <zephyr/dt-bindings/led/led.h>
 
 / {
-	model = "ESP32-S3-DEV-KIT-N8R8";
-	compatible = "waveshare,esp32s3-devkit-n8r8";
+	model = "Seeed XIAO ESP32S3";
+	compatible = "seeed,esp32s3_devkit_n8r8";
 
 	chosen {
 		zephyr,sram = &sram0;
