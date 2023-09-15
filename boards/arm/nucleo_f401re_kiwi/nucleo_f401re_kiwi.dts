@@ -29,6 +29,26 @@
 			gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
 			label = "User LD2";
 		};
+
+		gpio_enb: gpio_enb {
+			gpios = <&gpiob 3 GPIO_ACTIVE_HIGH>;
+			label = "User GPIO1";
+		};
+
+		gpio_mode: gpio_mode {
+			gpios = <&gpioa 10 GPIO_ACTIVE_HIGH>;
+			label = "User GPIO2";
+		};
+
+		gpio_buck: gpio_buck {
+			gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>;
+			label = "User GPIO3";
+		};
+
+		gpio_boost: gpio_boost {
+			gpios = <&gpiob 4 GPIO_ACTIVE_HIGH>;
+			label = "User GPIO4";
+		};
 	};
 
 	pwmleds {
@@ -48,6 +68,10 @@
 
 	aliases {
 		led0 = &green_led_2;
+		cbenb = &gpio_enb;
+		cbmode = &gpio_mode;
+		cbbuck = &gpio_buck;
+		cbboost = &gpio_boost;
 		sw0 = &user_button;
 		pwm-led0 = &green_pwm_led;
 		watchdog0 = &wwdg;
